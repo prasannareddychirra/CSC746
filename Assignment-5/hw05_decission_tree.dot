@@ -1,0 +1,13 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Weather_Sunny <= 0.5\ngini = 0.49\nsamples = 7\nvalue = [3, 4]\nclass = No", fillcolor="#cee6f8"] ;
+1 [label="Work Late_yes <= 0.5\ngini = 0.375\nsamples = 4\nvalue = [3, 1]\nclass = Yes", fillcolor="#eeab7b"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.5\nsamples = 2\nvalue = [1, 1]\nclass = Yes", fillcolor="#ffffff"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 2\nvalue = [2, 0]\nclass = Yes", fillcolor="#e58139"] ;
+1 -> 3 ;
+4 [label="gini = 0.0\nsamples = 3\nvalue = [0, 3]\nclass = No", fillcolor="#399de5"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
